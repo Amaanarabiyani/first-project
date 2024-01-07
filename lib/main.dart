@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:practice_project/pages/welcome.dart';
+import 'package:practice_project/pages/login.dart';
 
 void main() {
-  runApp( MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -10,8 +10,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      home:  LoginPage(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: LoginPage(),
+      initialRoute: 'LoginPage',
+      routes: {
+        "Login": (context) => LoginPage(),
+      },
     );
   }
 }
