@@ -60,7 +60,6 @@ class Login extends StatelessWidget {
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  
                 ),
               ),
             ),
@@ -99,7 +98,9 @@ class Login extends StatelessWidget {
                 borderRadius: BorderRadius.circular(19),
               ),
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, "Login2");
+                },
                 child: Text(
                   'Submit',
                   style: TextStyle(
