@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practice_project/LoginPages/location.dart';
 import 'package:practice_project/LoginPages/login.dart';
 import 'package:practice_project/LoginPages/login2.dart';
 import 'package:practice_project/LoginPages/welcome.dart';
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "Login": (context) => Login(),
         "Login2": (context) => Login2(),
+        "Location": (context) => Location(),
       },
     );
   }
