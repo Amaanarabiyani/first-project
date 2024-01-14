@@ -33,7 +33,9 @@ class Location extends StatelessWidget {
                     color: Color(0xff292D32),
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, 'Location2');
+                },
               ),
             ),
             SizedBox(
@@ -60,7 +62,6 @@ class Location extends StatelessWidget {
             ),
           ],
         ),
-        
       ),
     );
   }

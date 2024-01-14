@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:practice_project/LoginPages/camera.dart';
 import 'package:practice_project/LoginPages/location.dart';
+import 'package:practice_project/LoginPages/location2.dart';
 import 'package:practice_project/LoginPages/login.dart';
 import 'package:practice_project/LoginPages/login2.dart';
 import 'package:practice_project/LoginPages/welcome.dart';
@@ -9,8 +11,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,6 +20,8 @@ class MyApp extends StatelessWidget {
         "Login": (context) => Login(),
         "Login2": (context) => Login2(),
         "Location": (context) => Location(),
+        "Location2": (context) => Location2(),
+        "Camera": (context) => Camera(),
       },
     );
   }
