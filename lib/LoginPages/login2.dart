@@ -42,7 +42,7 @@ class Login2 extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 30,
+              height: 50,
             ),
             Image.asset("assets/images/line.png"),
             SizedBox(
@@ -67,7 +67,7 @@ class Login2 extends StatelessWidget {
                   leading: Image.asset('assets/images/Subtract.png'),
                   title: Text("Korum Mall"),
                   subtitle: Text(
-                      "Reliance sMArt\nAdders: Eastern Express Highway, Near Jupiter Hospital, Majiwada, Thane (West), Maharashtra..."),
+                      "Reliance Smart\nAdders: Eastern Express Highway, Near Jupiter Hospital, Majiwada, Thane (West), Maharashtra..."),
                 ),
               ),
             ),
@@ -78,7 +78,7 @@ class Login2 extends StatelessWidget {
                   leading: Image.asset('assets/images/Subtract.png'),
                   title: Text("High Street Mall"),
                   subtitle: Text(
-                      "OM art\nAdders: Eastern Express Highway, Near Jupiter Hospital, Majiwada, Thane (West), Maharashtra..."),
+                      "OM Art\nAdders: Eastern Express Highway, Near Jupiter Hospital, Majiwada, Thane (West), Maharashtra..."),
                 ),
               ),
             ),

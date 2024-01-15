@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:practice_project/LoginPages/camera.dart';
+import 'package:practice_project/LoginPages/home.dart';
 import 'package:practice_project/LoginPages/location.dart';
 import 'package:practice_project/LoginPages/location2.dart';
 import 'package:practice_project/LoginPages/login.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         "Location": (context) => Location(),
         "Location2": (context) => Location2(),
         "Camera": (context) => Camera(),
+        "Home": (context) => Home(),
       },
     );
   }

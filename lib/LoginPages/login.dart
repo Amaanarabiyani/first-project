@@ -12,7 +12,7 @@ class Login extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(top: 50, left: 35),
               child: Container(
-                child: Image.asset('assets/images/group.png'),
+                child: Image.asset('assets/images/promoter.png'),
               ),
             ),
             SizedBox(

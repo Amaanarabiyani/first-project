@@ -55,8 +55,10 @@ class Location2 extends StatelessWidget {
             SizedBox(
               height: 30,
             ),
-            Image(
-              image: AssetImage('assets\images\line2.png'),
+            Container(
+              child: Image(
+                image: AssetImage('assets/images/line.png'),
+              ),
             ),
             SizedBox(
               height: 40,
@@ -107,14 +109,16 @@ class Location2 extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 50,
+              height: 80,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(
-                  child: Image(image: 
-                  AssetImage('assetName')),
+                InkWell(
+                  onTap: () {},
+                  child: Container(
+                    child: Image(image: AssetImage('assets/images/group.png')),
+                  ),
                 )
               ],
             )
