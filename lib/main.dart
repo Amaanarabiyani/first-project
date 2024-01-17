@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:practice_project/LoginPages/camera.dart';
-import 'package:practice_project/LoginPages/home.dart';
-import 'package:practice_project/LoginPages/location.dart';
-import 'package:practice_project/LoginPages/location2.dart';
-import 'package:practice_project/LoginPages/login.dart';
-import 'package:practice_project/LoginPages/login2.dart';
-import 'package:practice_project/LoginPages/welcome.dart';
+import 'package:practice_project/screens/attendance.dart';
+import 'package:practice_project/screens/camera.dart';
+import 'package:practice_project/screens/home.dart';
+import 'package:practice_project/screens/location.dart';
+import 'package:practice_project/screens/location2.dart';
+import 'package:practice_project/screens/login.dart';
+import 'package:practice_project/screens/login2.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WelcomePage(),
+      home: Attendance(),
       routes: {
         "Login": (context) => Login(),
         "Login2": (context) => Login2(),
@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
         "Location2": (context) => Location2(),
         "Camera": (context) => Camera(),
         "Home": (context) => Home(),
+        "Attendance": (context) => Attendance(),
       },
     );
   }
