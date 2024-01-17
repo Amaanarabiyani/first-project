@@ -6,6 +6,7 @@ import 'package:practice_project/screens/location.dart';
 import 'package:practice_project/screens/location2.dart';
 import 'package:practice_project/screens/login.dart';
 import 'package:practice_project/screens/login2.dart';
+import 'package:practice_project/screens/welcome.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Attendance(),
+      home: WelcomePage(),
       routes: {
         "Login": (context) => Login(),
         "Login2": (context) => Login2(),

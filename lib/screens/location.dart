@@ -11,10 +11,8 @@ class Location extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              height: 500,
-              width: 200,
               child: Image(
-                image: AssetImage("assets/images/Subtract.png"),
+                image: AssetImage("assets/images/map.png"),
               ),
             ),
             Padding(
@@ -41,11 +39,20 @@ class Location extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
-              height: 40,
+            Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text("Hello"),
+                  ],
+                ),
+              ],
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            Column(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   "Viviana Mall",
@@ -55,23 +62,42 @@ class Location extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "08:21",
-                  style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.w800,
-                  ),
-                ),
-              ],
-            ),
-            Column(
-              children: [
-                Text(
                   "Smart Bazaar",
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
                     fontSize: 12,
+                    color: Color(0xffD17100),
                   ),
                 ),
+                Text(
+                  "Adders: Eastern Express Highway, Near\n Jupiter Hospital, Majiwada, Thane (West)....",
+                  style: TextStyle(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 12,
+                  ),
+                ),
+              ],
+            ),
+            Divider(),
+            Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    IconButton(
+                      onPressed: () {},
+                      icon: Image.asset("assets/images/send.png"),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Image.asset("assets/images/square.png"),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Image.asset("assets/images/tick.png"),
+                    )
+                  ],
+                )
               ],
             )
           ],
