@@ -229,16 +229,17 @@ class Attendance extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(5),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                        child: Text(
+                          'Wed',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 15,
                           ),
-                          child: Text(
-                            'Wed',
-                            style: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              fontSize: 15,
-                            ),
-                          )),
+                        ),
+                      ),
                       Text(
                         "09:00",
                         style: TextStyle(
@@ -385,55 +386,59 @@ class Attendance extends StatelessWidget {
                   SizedBox(
                     height: 300,
                   ),
-                  Row(
-                    children: [
-                      Container(
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            IconButton(
-                              onPressed: () {
-                                Navigator.pushNamed(context, "Home");
-                              },
-                              icon: Image(
-                                image: AssetImage("assets/images/hm.png"),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        Container(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              IconButton(
+                                onPressed: () {
+                                  Navigator.pushNamed(context, "Home");
+                                },
+                                icon: Image(
+                                  image: AssetImage("assets/images/hm.png"),
+                                ),
                               ),
-                            ),
-                            IconButton(
-                              onPressed: () {
-                                Navigator.pushNamed(context, 'Attendance');
-                              },
-                              icon: Image(
-                                image:
-                                    AssetImage("assets/images/attendance.png"),
+                              IconButton(
+                                onPressed: () {
+                                  Navigator.pushNamed(context, 'Attendance');
+                                },
+                                icon: Image(
+                                  image:
+                                      AssetImage("assets/images/attencol.png"),
+                                ),
                               ),
-                            ),
-                            IconButton(
-                              onPressed: () {},
-                              icon: Image(
-                                fit: BoxFit.cover,
-                                image: AssetImage("assets/images/st.png"),
+                              IconButton(
+                                onPressed: () {
+                                  Navigator.pushNamed(context, "Stock");
+                                },
+                                icon: Image(
+                                  image: AssetImage("assets/images/st.png"),
+                                ),
                               ),
-                            ),
-                            IconButton(
-                              onPressed: () {},
-                              icon: Image(
-                                image: AssetImage("assets/images/pf.png"),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Image(
+                                  image: AssetImage("assets/images/pf.png"),
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
+                          width: 380,
+                          height: 76,
+                          decoration: BoxDecoration(
+                            color: Color(0xffFFF4E7),
+                            borderRadius: BorderRadius.circular(33),
+                          ),
                         ),
-                        width: 380,
-                        height: 76,
-                        decoration: BoxDecoration(
-                          color: Color(0xffFFF4E7),
-                          borderRadius: BorderRadius.circular(33),
-                        ),
-                      ),
-                    ],
+                      ],
+                    ),
                   )
                 ],
-              )
+              ),
             ],
           ),
         ),

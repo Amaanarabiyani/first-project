@@ -228,7 +228,7 @@ class Home extends StatelessWidget {
                           IconButton(
                             onPressed: () {},
                             icon: Image(
-                              image: AssetImage("assets/images/hm.png"),
+                              image: AssetImage("assets/images/homecol.png"),
                             ),
                           ),
                           IconButton(
