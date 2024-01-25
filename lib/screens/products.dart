@@ -8,40 +8,38 @@ class Products extends StatelessWidget {
     return Material(
       child: Column(
         children: [
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(
-                    top: 70,
-                  ),
-                  child: Image(
-                    image: AssetImage('assets/images/uni.png'),
-                  ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(
+                  top: 70,
+                  left: 40,
                 ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Hindustan Unilever.',
-                      style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 14,
-                      ),
-                    ),
-                    Text(
-                      'Hindustan Unilever Limited (HUL) is one of the largest\n consumer goods companies in India. It is a subsidiary of\n Unilever, a British-Dutch multinationa...',
-                      style: TextStyle(
-                        fontWeight: FontWeight.w300,
-                        fontSize: 8,
-                      ),
-                    ),
-                  ],
+                child: Image(
+                  image: AssetImage('assets/images/uni.png'),
                 ),
-              ],
-            ),
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Hindustan Unilever.',
+                    style: TextStyle(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 14,
+                    ),
+                  ),
+                  Text(
+                    'Hindustan Unilever Limited (HUL) is one of the largest\n consumer goods companies in India. It is a subsidiary of\n Unilever, a British-Dutch multinationa...',
+                    style: TextStyle(
+                      fontWeight: FontWeight.w300,
+                      fontSize: 8,
+                    ),
+                  ),
+                ],
+              ),
+            ],
           ),
           SizedBox(
             height: 20,

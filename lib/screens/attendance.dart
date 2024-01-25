@@ -37,7 +37,8 @@ class Attendance extends StatelessWidget {
                     height: 38,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(25),
-                      color: Color(0xffFFA2341F),
+                      color: Color.fromARGB(255, 162, 52, 1),
+                      // color: Colors.red,
                     ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,

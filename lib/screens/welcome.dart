@@ -18,7 +18,11 @@ class WelcomePage extends StatelessWidget {
               Container(
                 child: Text(
                   'Welcome to Inventro',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+                  style: TextStyle(
+                    fontWeight: FontWeight.w900,
+                    fontSize: 24,
+                    fontFamily: 'Font',
+                  ),
                 ),
               ),
               SizedBox(
@@ -29,7 +33,11 @@ class WelcomePage extends StatelessWidget {
                 child: Container(
                   child: Text(
                     'Ignite Your Brand Potential, Connect with\nNetwork, and Drive Sucess in One Powerful\nPlatform - Empowering Promoters and Brands to\nThrive in the Competitive Market Landscape',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                    style: TextStyle(
+                      fontWeight: FontWeight.w400,
+                      fontSize: 15,
+                      fontFamily: 'Font',
+                    ),
                   ),
                 ),
               ),

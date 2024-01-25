@@ -192,7 +192,9 @@ class Home extends StatelessWidget {
                       height: 137,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: AssetImage('assets/images/samp.png'),
+                          image: AssetImage(
+                            'assets/images/samp.png',
+                          ),
                         ),
                         color: Color(0xffFFA233),
                         borderRadius: BorderRadius.circular(10),
@@ -214,7 +216,7 @@ class Home extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 60,
+              height: 20,
             ),
             Column(
               children: [

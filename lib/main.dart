@@ -7,6 +7,7 @@ import 'package:practice_project/screens/location2.dart';
 import 'package:practice_project/screens/login.dart';
 import 'package:practice_project/screens/login2.dart';
 import 'package:practice_project/screens/products.dart';
+import 'package:practice_project/screens/profile.dart';
 import 'package:practice_project/screens/stock.dart';
 import 'package:practice_project/screens/welcome.dart';
 
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         "Attendance": (context) => Attendance(),
         "Stock": (context) => Stock(),
         "Products": (context) => Products(),
+        "Profile": (context) => Profile(),
       },
     );
   }

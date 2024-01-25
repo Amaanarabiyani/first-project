@@ -135,7 +135,9 @@ class Stock extends StatelessWidget {
                             ),
                           ),
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.pushNamed(context, "Profile");
+                            },
                             icon: Image(
                               image: AssetImage("assets/images/pf.png"),
                             ),
