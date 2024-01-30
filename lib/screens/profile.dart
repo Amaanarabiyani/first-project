@@ -1,6 +1,12 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Profile extends StatelessWidget {
+class Profile extends StatefulWidget {
+  @override
+  State<Profile> createState() => _ProfileState();
+}
+
+class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -15,25 +21,25 @@ class Profile extends StatelessWidget {
               child: Row(
                 children: [
                   Text(
-                    "Profile",
+                    'Profile',
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                       fontSize: 18,
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(
-                      left: 240,
-                    ),
-                    child: IconButton(
-                      onPressed: () {},
-                      icon: Image(
-                        image: AssetImage("assets/images/notification.png"),
-                      ),
+                  Spacer(),
+                  IconButton(
+                    onPressed: () {
+                      print('Button Pressed');
+                    },
+                    icon: Image(
+                      image: AssetImage("assets/images/notification.png"),
                     ),
                   ),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      print('Button Pressed');
+                    },
                     icon: Image(
                       image: AssetImage("assets/images/info.png"),
                     ),
@@ -46,175 +52,117 @@ class Profile extends StatelessWidget {
             ),
             Column(
               children: [
-                Container(
-                  width: 380,
-                  height: 240,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(32),
-                  ),
-                  child: Column(
-                    children: [
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Image(
-                            height: 68,
-                            image: AssetImage("assets/images/Subtract.png"),
-                          ),
-                          SizedBox(
-                            width: 5,
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Viviana Mall',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 14,
-                                ),
-                              ),
-                              Text(
-                                'Smart Bazaar',
-                                style: TextStyle(
-                                  color: Color(0xffD17100),
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 14,
-                                ),
-                              ),
-                              Text(
-                                'Adders: Eastern Express Highway, Near Jupiter\n Hospital, Majiwada, Thane (West), Maharas...',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 12,
-                                ),
-                              )
-                            ],
-                          )
-                        ],
-                      ),
-                      SizedBox(
-                        height: 15,
-                      ),
-                      Divider(),
-                      SizedBox(
-                        height: 25,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          Image(
-                            image: AssetImage('assets/images/tick.png'),
-                          ),
-                          Image(
-                            image: AssetImage('assets/images/square.png'),
-                          ),
-                          Image(
-                            image: AssetImage('assets/images/send.png'),
-                          )
-                        ],
-                      )
-                    ],
-                  ),
+                Image(
+                  image: AssetImage("assets/images/Group20.png"),
                 ),
               ],
             ),
-            Column(
-              children: [
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    children: [
-                      Text(
-                        'Profile Details',
-                        style: TextStyle(
-                          fontWeight: FontWeight.w700,
-                          fontSize: 16,
-                        ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Container(
+                margin: EdgeInsets.symmetric(
+                  horizontal: 20,
+                ),
+                child: Row(
+                  children: [
+                    Text(
+                      'Profile Details',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w700,
+                        fontSize: 16,
                       ),
-                      SizedBox(
-                        width: 20,
-                      ),
-                      Image(
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Container(
+                      child: Image(
                         image: AssetImage('assets/images/line.png'),
-                      )
-                    ],
-                  ),
-                )
-              ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ),
             SizedBox(
               height: 10,
             ),
             Column(
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    CircleAvatar(
-                      child: Image(
-                        image: AssetImage('assets/images/kk.png'),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Lily Thompson',
-                          style: TextStyle(
-                            fontWeight: FontWeight.w700,
-                            fontSize: 18,
-                          ),
+                Container(
+                  margin: EdgeInsets.symmetric(
+                    horizontal: 20,
+                    vertical: 10,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      CircleAvatar(
+                        child: Image(
+                          image: AssetImage('assets/images/kk.png'),
                         ),
-                        Text(
-                          'LilyThompson@gmail.com',
-                          style: TextStyle(
-                            fontWeight: FontWeight.w400,
-                            fontSize: 13,
-                          ),
-                        ),
-                      ],
-                    ),
-                    Spacer(),
-                    Container(
-                      margin: EdgeInsets.only(right: 20),
-                      child: Image(
-                        image: AssetImage('assets/images/l8.png'),
                       ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(
-                        right: 10,
+                      SizedBox(
+                        width: 10,
                       ),
-                      child: Column(
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Row(
-                            children: [
-                              Text(
-                                'Last Update',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 14,
-                                ),
-                              ),
-                            ],
+                          Text(
+                            'Lily Thompson',
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 18,
+                            ),
                           ),
                           Text(
-                            '04:00 PM',
+                            'LilyThompson@gmail.com',
                             style: TextStyle(
-                              fontWeight: FontWeight.w500,
+                              fontWeight: FontWeight.w400,
                               fontSize: 13,
-                              color: Color(0xffFFA234),
+                              fontFamily: 'Font',
                             ),
                           ),
                         ],
                       ),
-                    ),
-                  ],
+                      Spacer(),
+                      Container(
+                        margin: EdgeInsets.symmetric(horizontal: 20),
+                        child: Image(
+                          image: AssetImage('assets/images/l8.png'),
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(
+                          right: 10,
+                        ),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Text(
+                                  'Last Update',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 14,
+                                    fontFamily: '',
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Text(
+                              '04:00 PM',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 13,
+                                color: Color(0xffFFA234),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -225,11 +173,16 @@ class Profile extends StatelessWidget {
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children: [
-                          Text(
-                            'More Options',
-                            style: TextStyle(
-                              fontWeight: FontWeight.w700,
-                              fontSize: 16,
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 20,
+                            ),
+                            child: Text(
+                              'More Options',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 16,
+                              ),
                             ),
                           ),
                           SizedBox(
@@ -243,8 +196,122 @@ class Profile extends StatelessWidget {
                     )
                   ],
                 ),
+                SizedBox(
+                  height: 10,
+                ),
+                Column(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.symmetric(
+                        horizontal: 10,
+                      ),
+                      child: Row(
+                        children: [
+                          IconButton(
+                            onPressed: () {},
+                            icon: Image.asset(
+                              'assets/images/security.png',
+                            ),
+                          ),
+                          Text(
+                            'Term and Conditions',
+                            style: TextStyle(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 14,
+                              fontFamily: "Font",
+                            ),
+                          ),
+                          Spacer(),
+                          Icon(
+                            Icons.arrow_forward_ios_outlined,
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.symmetric(
+                        horizontal: 10,
+                      ),
+                      child: Row(
+                        children: [
+                          IconButton(
+                            onPressed: () {},
+                            icon: Image.asset(
+                              'assets/images/setting.png',
+                            ),
+                          ),
+                          Text(
+                            'Settings',
+                            style: TextStyle(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 14,
+                              fontFamily: 'Font',
+                            ),
+                          ),
+                          Spacer(),
+                          Icon(
+                            Icons.arrow_forward_ios_outlined,
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.symmetric(
+                        horizontal: 10,
+                      ),
+                      child: Row(
+                        children: [
+                          IconButton(
+                            onPressed: () {},
+                            icon: Image.asset(
+                              'assets/images/faq.png',
+                            ),
+                          ),
+                          Text(
+                            'Ask Questions',
+                            style: TextStyle(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 14,
+                              fontFamily: 'Font',
+                            ),
+                          ),
+                          Spacer(),
+                          Icon(
+                            Icons.arrow_forward_ios_outlined,
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.symmetric(
+                        horizontal: 10,
+                      ),
+                      child: Row(
+                        children: [
+                          IconButton(
+                            onPressed: () {},
+                            icon: Image.asset(
+                              'assets/images/export.png',
+                            ),
+                          ),
+                          Text(
+                            'Log Out',
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14,
+                                fontFamily: 'Font'),
+                          ),
+                          Spacer(),
+                          Icon(
+                            Icons.arrow_forward_ios_outlined,
+                          )
+                        ],
+                      ),
+                    ),
+                  ],
+                )
               ],
-            )
+            ),
           ],
         ),
       ),
