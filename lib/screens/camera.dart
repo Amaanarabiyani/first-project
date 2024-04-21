@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practice_project/widgets/navbar.dart';
 
 class Camera extends StatelessWidget {
   const Camera({super.key});
@@ -50,25 +51,18 @@ class Camera extends StatelessWidget {
                     SizedBox(
                       height: 50,
                     ),
-                    Container(
-                      width: 100,
-                      height: 100,
-                      child: TextButton(
-                        onPressed: () {
-                          Navigator.pushNamed(context, "Home");
-                        },
-                        child: Text(
-                          "Click",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.w700,
-                            fontSize: 16,
-                          ),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => NavBar()));
+                      },
+                      child: Text(
+                        "Click",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w700,
+                          fontSize: 16,
                         ),
-                      ),
-                      decoration: BoxDecoration(
-                        color: Color(0xffFFA234),
-                        borderRadius: BorderRadius.circular(72),
                       ),
                     )
                   ],

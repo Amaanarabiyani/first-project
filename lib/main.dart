@@ -10,6 +10,7 @@ import 'package:practice_project/screens/products.dart';
 import 'package:practice_project/screens/profile.dart';
 import 'package:practice_project/screens/stock.dart';
 import 'package:practice_project/screens/welcome.dart';
+import 'package:practice_project/widgets/navbar.dart';
 
 void main() {
   runApp(MyApp());
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         "Stock": (context) => Stock(),
         "Products": (context) => Products(),
         "Profile": (context) => Profile(),
+        "Navbar": (context) => NavBar(),
       },
     );
   }

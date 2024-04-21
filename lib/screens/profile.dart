@@ -1,12 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Profile extends StatefulWidget {
-  @override
-  State<Profile> createState() => _ProfileState();
-}
-
-class _ProfileState extends State<Profile> {
+class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -289,7 +283,9 @@ class _ProfileState extends State<Profile> {
                       child: Row(
                         children: [
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              print('button pressed');
+                            },
                             icon: Image.asset(
                               'assets/images/export.png',
                             ),
